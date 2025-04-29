@@ -11,7 +11,7 @@ class AccountProfs : public PlayerScript
 public:
     AccountProfs() : PlayerScript("AccountProfs") { }
 
-  void OnLogin(Player* theplayer) override
+  void OnPlayerLogin(Player* theplayer) override
    {
     if (sConfigMgr->GetOption<bool>("Account.Profs.Enable", false) == true) {
 /*-----------------------------------------------*/
